@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2.068 s <<< FAILURE! - in TestSuite
+testCalculateAgeCorrectDate on testCalculateAgeCorrectDate(com.cognizant.AgeTests)(com.cognizant.AgeTests)  Time elapsed: 0.198 s  <<< FAILURE!
+java.lang.ExceptionInInitializerError
+	at com.cognizant.AgeTests.setUp(AgeTests.java:33)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @3498ed
+	at com.cognizant.AgeTests.setUp(AgeTests.java:33)
+
+testCalculateAgeInvalidDate on testCalculateAgeInvalidDate(com.cognizant.AgeTests)(com.cognizant.AgeTests)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
+	at com.cognizant.AgeTests.setUp(AgeTests.java:33)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
+	at com.cognizant.AgeTests.setUp(AgeTests.java:33)
+
+testAgeCalculatorServlet on testAgeCalculatorServlet(com.cognizant.AgeTests)(com.cognizant.AgeTests)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class org.mockito.internal.creation.cglib.ClassImposterizer$3
+	at com.cognizant.AgeTests.setUp(AgeTests.java:33)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
+	at com.cognizant.AgeTests.setUp(AgeTests.java:33)
+
